@@ -1,0 +1,30 @@
+.li-border{
+    border-color: white;
+}
+
+#gambar-segitiga img {
+    width: 20% !important;
+}
+
+table tr td,
+table tr th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+table.table td,
+table.table th {
+    padding: 10px;
+}
+
+.display-application-none{
+    display: none;
+}
+
+a.link-app:hover {
+    background-color: #001242 !important;
+}
+
+a.active-app {
+    color: #f6c23e !important;
+}

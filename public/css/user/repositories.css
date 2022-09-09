@@ -1,0 +1,30 @@
+.jumbotron-repo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)) ,url('/img/user/jumbotron-repositories.png');
+    background-size: cover;
+    height: 450px;
+}
+
+.jumbotron-repo h2 {
+    font-size: 40px;
+    text-shadow: 3px 0 #000;
+}
+
+.jumbotron-repo p {
+    text-shadow: 2px 0 #000;
+}
+
+.overflow-auto{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+table>tbody>tr>td,
+table>thead>tr>th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+table.table td,
+table.table th {
+    padding: 10px;
+}

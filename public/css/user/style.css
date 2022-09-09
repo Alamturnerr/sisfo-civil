@@ -1,0 +1,149 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    text-align: left;
+    background-color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-primary a {
+    color: #f6c23e;
+}
+
+.bg-primary a:hover {
+    color: rgb(255, 213, 180);
+}
+
+main {
+    min-height: 50vh;
+}
+
+main img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.btn:hover {
+    font-weight: normal;
+}
+
+.text-primary {
+    color: #17376E !important;
+}
+
+.bg-primary {
+    background-color: #17376E !important;
+}
+
+.btn-primary {
+    background-color: #17376E !important;
+    border-color: #17376E !important;
+}
+
+.btn-primary:hover {
+    background-color: #395687 !important;
+}
+
+.badge-primary {
+    background-color: #17376E !important;
+    border-color: #17376E !important;
+}
+
+.badge-warning{
+    background-color: #f6c23e !important;
+    color: #17376E !important;
+}
+
+.badge-warning:hover, .badge-warning:active{
+    background-color: #ffd580 !important;
+}
+
+.badge-primary:hover {
+    background-color: #395687 !important;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 18, 66, 0.5);
+    line-height: 46px;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: white;
+}
+
+.scroll-to-top:hover {
+    background: #001242;
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}
+/* End Global */
+
+/* Navbar */
+.navbar {
+    background-color: #17376E;
+    padding: 0 !important;
+}
+
+.navbar img {
+    height: 35px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    font-weight: normal;
+}
+
+.active,
+.active:hover {
+    color: #f6c23e !important;
+    font-weight: bold;
+}
+
+.navbar .contact-us {
+    border-radius: 20px;
+}
+
+.nav-item:hover {
+    background-color: #001242;
+}
+
+.bg-logo {
+    background-color: rgb(225, 225, 225);
+}
+/* End Navbar */
+
+/* Footer */
+.footer-icon {
+    font-size: 18px;
+}
+
+.footer-icon:hover {
+    color: #f6c23e !important;
+}
+
+footer hr {
+    border: 1px solid white;
+}
+/* End Footer */

@@ -1,0 +1,15 @@
+.map{
+    height: 550px;
+}
+
+.description-is{
+    height: 100px;
+    overflow: auto;
+}
+
+.box-color{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+}

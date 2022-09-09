@@ -1,0 +1,36 @@
+.jumbotron-event {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/img/user/jumbotron-event.png');
+    background-size: cover;
+    height: 450px;
+}
+
+.jumbotron-event h2 {
+    font-size: 40px;
+    text-shadow: 3px 0 #000;
+}
+
+.jumbotron-event p {
+    text-shadow: 2px 0 #000;
+}
+
+.img-event {
+    height: 350px !important;
+}
+
+.events-card-img:hover {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background: #17376E;
+    border-color: #17376E;
+    color: #ffffff;
+}
+
+.pagination .page-item .page-link {
+    color: #17376E;
+}
+
+/* End Pagination */

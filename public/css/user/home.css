@@ -1,0 +1,70 @@
+.jumbotron-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/img/user/jumbotron-home.jpg');
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+}
+
+.jumbotron-home h1 {
+    font-size: 50px;
+    text-shadow: 3px 0 #000;
+}
+
+.jumbotron-home p {
+    text-shadow: 2px 0 #000;
+}
+
+.bg-gallery-home {
+    background-color: rgb(245, 245, 245);
+}
+
+.thumb-home:hover{
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.latest-news-home img:hover {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+.card-img-home:hover{
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.gallery-active{
+    -webkit-filter: brightness(85%);
+    filter: brightness(85%);
+    box-shadow: 5px 5px 10px 3px #17376e !important;
+}
+
+.gallery-active:hover{
+    -webkit-filter: brightness(85%) !important;
+    filter: brightness(85%) !important;
+    cursor: context-menu !important;
+}
+
+/* Responsive CSS Mobile*/
+@media only screen and (max-width: 767px) {
+    .gallery-home .main-img-home {
+        display: none;
+    }
+    .gallery-active{
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+        box-shadow: none !important;
+    }
+    .gallery-active:hover{
+        -webkit-filter: brightness(100%) !important;
+        filter: brightness(100%) !important;
+        cursor: context-menu !important;
+    }
+    .thumb-home:hover{
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+        cursor: context-menu;
+    }
+}

@@ -1,0 +1,38 @@
+body {
+  background-color: #17376E;
+} 
+
+.sidebar-nav{
+    background-color: #17376E;
+}
+.text-primary{
+    color: #17376E!important;
+}
+.btn-primary{
+    background-color: #17376E!important;
+    border-color: #17376E!important;
+}
+.btn-primary:hover{
+  background-color: #395687!important;
+}
+
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > thead > tr > th,
+table > tfoot > tr > th {
+  vertical-align: middle!important;
+  text-align: center!important;
+}
+
+table.table td,
+table.table th {
+  padding: 8px;
+}
+
+.scroll-to-top{
+  background: rgba(23, 55, 110, 0.5);
+}
+
+.scroll-to-top:hover {
+  background: #17376E;
+}

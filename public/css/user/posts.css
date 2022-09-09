@@ -1,0 +1,31 @@
+.carousel-item img {
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+}
+
+.carousel-caption h5 a {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 2px #000;
+}
+
+.carousel-caption h5 a:hover, .carousel-caption p a:hover {
+    color: #f6c23e!important;
+}
+
+.posts-card-img:hover {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background: #17376E;
+    border-color: #17376E;
+    color: #ffffff;
+}
+
+.pagination .page-item .page-link {
+    color: #17376E;
+}
+/* End Pagination */
