@@ -11,7 +11,7 @@
 <header>
     <div class="jumbotron jumbotron-fluid jumbotron-job d-flex align-content-center flex-wrap">
         <div class="container text-white text-left">
-            <h2 class="display-4 text-uppercase">Lowongan Kerja Teknik Sipil Widyatama</h2>
+            <h2 class="display-4 text-uppercase">Lowongan Kerja Sipil UTama</h2>
             <div>
                 <p class="lead">Lulusan Teknik Sipil UTama, yaitu menjadi Asisten Konsultan Perencana dan Pengawasan Bidang Teknik Sipil, Asisten Kontraktor Bidang Teknik Sipil, Wirausaha Bidang Teknik Sipil, Akademisi Bidang Teknik Sipil, Peneliti? Bidang Teknik Sipil.</p>
             </div>

@@ -24,7 +24,7 @@
                 @foreach ($post_popular as $index => $post)
                 <section>
                     <a href="{{ url('/berita/'.$post->slug) }} " class="mb-0 pb-0"><li class="list-group-item borderless bg-primary pb-0 mb-0">{{ Str::limit($post->title, 100) }}</li></a> 
-                    <li class="list-group-item borderless bg-primary py-0 mt-0 mb-2"><span class="small -0 py-0">{{$post->created_at}}</span>@if($index<4) <hr class="border-secondary"> @endif</li>
+                    <li class="list-group-item borderless bg-primary py-0 mt-0 mb-2"><span class="small -0 py-0">{{$post->created_at}}</span>@if($index<$post_popular->count()-1) <hr class="border-secondary"> @endif</li>
                 </section>
                 @if($index==4) @break @endif
                 @endforeach
@@ -42,7 +42,7 @@
                 @foreach ($posts as $index => $post)
                 <section>
                     <a href="{{ url('/berita/'.$post->slug) }} " class="mb-0 pb-0"><li class="list-group-item borderless bg-primary pb-0 mb-0">{{ Str::limit($post->title, 100) }}</li></a> 
-                    <li class="list-group-item borderless bg-primary py-0 mt-0 mb-2"><span class="small -0 py-0">{{$post->created_at}}</span>@if($index<4) <hr class="border-secondary"> @endif</li>
+                    <li class="list-group-item borderless bg-primary py-0 mt-0 mb-2"><span class="small -0 py-0">{{$post->created_at}}</span>@if($index<$posts->count()-1) <hr class="border-secondary"> @endif</li>
                 </section>
                 @if($index==4) @break @endif
                 @endforeach

@@ -16,7 +16,7 @@
                 <h2 class="display-4 text-uppercase">Repositori</h2>
             @endif
             <div>
-                <p class="lead">Sipil Utama hadir dengan Program Studi Teknik Sipil dengan kurikulum yang sesuai dengan kebutuhan Industri.</p>
+                <p class="lead">Sipil UTama hadir dengan Program Studi Teknik Sipil dengan kurikulum yang sesuai dengan kebutuhan Industri.</p>
             </div>
         </div>
     </div>

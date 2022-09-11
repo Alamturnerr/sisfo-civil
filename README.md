@@ -21,11 +21,11 @@ Pastikan sudah terinstall git dan disarankan untuk menggunakannya sebagai termin
 - git clone
 - git checkout develop (untuk pindah branch ke tempat developer mengedit kode)
 - composer install, kalau tidak bisa, composer update (download & install terlebih dahulu composer sesuai OS yang dipakai)
-- php artisan key:generate
 - buat file .env, bisa copy dari .env.example & lalu buat databasenya manual lewat phpmyadmin
 - php artisan migrate
 - tambahkan FILESYSTEM_DRIVER=public di file .env
 - php artisan storage:link
+- php artisan key:generate
 - php artisan serve
 
 ## Testing Data Dummy

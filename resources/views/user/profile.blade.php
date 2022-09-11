@@ -14,7 +14,7 @@
 		<section class="my-3">
 			<div class="row justify-content-center">
 				<div class="col-lg-10 py-3 my-auto">
-					<img src="{{asset("img/user/about-profile.png")}}" class="d-block w-100 mx-auto shadow" alt="about-profile">
+					<img src="{{asset("img/user/about-profile.jpg")}}" class="d-block w-100 mx-auto shadow" alt="about-profile">
 				</div>
 			</div>
 			<div class="row">
