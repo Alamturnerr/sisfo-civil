@@ -55,6 +55,7 @@
                         <th width="5%">No</th>
 						<th class="text-left">Judul</th>
                         <th width="15%">Kategori</th>
+						<th width="10%">Total Pengunjung</th>
 						<th width="15%">created_at</th>
 						<th width="15%">updated_at</th>
 						<th width="20%">Aksi</th>
@@ -65,6 +66,7 @@
                         <th width="5%">No</th>
 						<th class="text-left">Judul</th>
                         <th width="15%">Kategori</th>
+						<th width="10%">Total Pengunjung</th>
 						<th width="15%">created_at</th>
 						<th width="15%">updated_at</th>
 						<th width="15%">Aksi</th>
@@ -81,6 +83,7 @@
 							@else
 							<td><a href="posts/categories/{{ $post->post_category->slug }}"><i class="fas fa-sm fa-fw fa-tag"></i> {{ $post->post_category->name }}</a></td>
 							@endif
+							<td class="text-left">{{ $post->total_visited }}</td>
 							<td class="text-center">{{ $post->created_at }}</td>
 							<td class="text-center">{{ $post->updated_at }}</td>
                             <td>
