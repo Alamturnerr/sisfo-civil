@@ -13,6 +13,7 @@ use App\Http\Controllers\InformationSystemController;
 use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\GaleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,6 +59,7 @@ Route::resource('admin/jobs', JobController::class);
 Route::resource('admin/applicants', ApplicantController::class);
 Route::get('admin/applicants/jobs/{job:id}', [JobController::class, 'show']);
 Route::resource('admin/events', EventController::class);
+Route::resource('admin/galery', GaleryController::class);
 
 // Auth
 Auth::routes();
