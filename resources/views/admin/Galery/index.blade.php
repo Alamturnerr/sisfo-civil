@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Galery <i class="fas fa-sm fa-fw fa-tag"></i></h1>
+<h1 class="h3 mb-2 text-gray-800">Galery </h1>
 <p class="mb-4">Halaman ini menampilkan data di <a target="_blank" href="/">halaman Home. </a></p>
 <div class="row">
 	<div class="col-md-4 text-center">
@@ -59,13 +59,13 @@
                         <td class="text-center">{{ ++$index }}</td>
 							<td class="text-left">{{ $galery->title }}</td>
                             <td>
-								<a class="btn btn-outline-success btn-sm my-1" href="{{ route('events.show',$event->slug) }}"><i class="fas fa-eye"></i></a>
-								<a class="btn btn-outline-primary btn-sm my-1" href="{{ route('events.edit',$event->slug) }}"><i class="fas fa-edit"></i></a>
-								<button type="button" class="btn btn-outline-danger btn-sm my-1" data-toggle="modal" data-target="#deleteeventModal-{{ $event->slug }}"><i class="fas fa-trash"></i></button>
+								<a class="btn btn-outline-success btn-sm my-1" href="{{ route('galery.show',$galery->id) }}"><i class="fas fa-eye"></i></a>
+								<a class="btn btn-outline-primary btn-sm my-1" href="{{ route('galery.edit',$galery->id) }}"><i class="fas fa-edit"></i></a>
+								<button type="button" class="btn btn-outline-danger btn-sm my-1" data-toggle="modal" data-target="#deleteeventModal-{{ $galery->id }}"><i class="fas fa-trash"></i></button>
 							</td>
                     </tr>
                     <!-- Delete event Modal -->
-					<div class="modal fade" id="deleteeventModal-{{ $event->slug }}" tabindex="-1" aria-labelledby="deleteeventModal" aria-hidden="true">
+					<div class="modal fade" id="deleteeventModal-{{ $galery->id }}" tabindex="-1" aria-labelledby="deleteeventModal" aria-hidden="true">
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
@@ -75,10 +75,10 @@
 									</button>
 								</div>
 								<div class="modal-body">
-									<p>Event <strong>{{ $event->name }}</strong> akan dihapus secara permanen. Pilih "Hapus" jika sudah yakin.</p>
+									<p>Event <strong>{{ $galery->title }}</strong> akan dihapus secara permanen. Pilih "Hapus" jika sudah yakin.</p>
 								</div>
 								<div class="modal-footer">
-									<form action="{{ route('events.destroy', $event->slug) }}" method="POST">
+									<form action="{{ route('galery.destroy', $galery->id) }}" method="POST">
 										@csrf
 										@method('DELETE')
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
