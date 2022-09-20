@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="{{ asset('css/user/side-posts.css') }}">
 @endsection
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
 @section('content')
 <main>
     <div class="container">
@@ -15,10 +18,15 @@
             <div class="col-md-12">
                 <h3>{{ $post->title }}</h3>
                 <p class="px-1">
-                    <i class="fas fa-calendar"></i> {{ $post->created_at }} - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
+                    <i class="fas fa-calendar"></i> {{ $post->created_at }} <i class="fas fa-eye"></i> <span data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Total pengunjung ">{{ $post->total_visited}}</span> - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
                 </p>
             </div>
         </section>
+          <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();   
+            });
+            </script>
         <!-- End Judul -->
         
         <hr>
