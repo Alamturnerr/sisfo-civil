@@ -18,7 +18,7 @@
             <div class="col-md-12">
                 <h3>{{ $post->title }}</h3>
                 <p class="px-1">
-                    <i class="fas fa-calendar"></i> {{ $post->created_at }} <i class="fas fa-eye"></i> <span data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Total pengunjung ">{{ $post->total_visited}}</span> - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
+                    <i class="fas fa-calendar"> </i> <span data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content=" Tanggal Diterbitkan "> </i>{{ $post->created_at }}</span> <i class="fas fa-eye"></i> <span data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Total pengunjung ">{{ $post->total_visited}}</span> - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
                 </p>
             </div>
         </section>
