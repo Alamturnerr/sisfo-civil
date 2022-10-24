@@ -10,7 +10,7 @@ class Galery extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title', 'image'
+        'image', 'slug'
     ];
 
 
@@ -39,6 +39,11 @@ class Galery extends Model
         $query->when($filters['search'] ?? false, function($query, $search){
             return $query->where('name', 'like', '%' .$search. '%');
         });
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }
 

@@ -15,7 +15,6 @@ class InformationSystemFactory extends Factory
     {
         $status = [
             'Daerah Rawan',
-            'Dalam Pembangunan',
             'Daerah Strategis'
         ];
 

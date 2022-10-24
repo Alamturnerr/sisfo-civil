@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Galery;
 use App\Http\Requests\StoreGaleryRequest;
-use App\Http\Requests\UpdateGaleryRequest;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class GaleryController extends Controller
+
 {
 
     public function _construct()
@@ -31,7 +33,9 @@ class GaleryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.galery.create',[
+            'galery' => Galery::get()
+        ]);
     }
 
     /**
@@ -42,7 +46,20 @@ class GaleryController extends Controller
      */
     public function store(StoreGaleryRequest $request)
     {
-        //
+        $input = $request->all();
+
+        if (request()->file('image')) {
+            $image = request()->file('image');
+            $imageUrl = $image->storeAs("img/galery", Str::slug('Galery')."-".time().".{$image->extension()}");
+        } else{
+            $imageUrl = null;
+        }
+        $input['image'] = "$imageUrl";
+
+        $post = Galery::create($input);
+         
+        return redirect()->route('galery.index')
+            ->with('success','Gambar berhasil dibuat!');
     }
 
     /**
@@ -87,6 +104,13 @@ class GaleryController extends Controller
      */
     public function destroy(Galery $galery)
     {
-        //
+        if($galery->image && Storage::exists($galery->image)){
+            storage::delete($galery->image);
+        }
+
+        $galery->delete();
+
+        return redirect()->route('galery.index')
+        ->with('success','Foto berhasil dibapus!');
     }
 }

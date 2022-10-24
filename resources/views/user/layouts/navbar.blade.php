@@ -34,8 +34,59 @@
 				<a class="nav-link {{ request()->is('event', 'event/*') ? ' active' : '' }}" href="/event">Event</a>
 			</li>
 			<li class="px-2 py-2">
-				<a target="_blank" class="nav-link btn btn-danger btn-sm px-4 contact-us" href="mailto:sipil.utama2019@gmail.com">Kontak Kami</a>
+				<button type="button" class="nav-link btn btn-danger btn-sm px-4 contact-us" data-toggle="modal" data-target="#exampleModal">
+					Login
+				  </button>
+				{{-- <a target="_blank" class="nav-link btn btn-danger btn-sm px-4 contact-us" href="mailto:sipil.utama2019@gmail.com">Kontak Kami</a> --}}
 			</li>
 		</ul>
 	</div>
 </nav>
+
+{{-- Modal Login --}}
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="h4 text-gray-900 mb-4">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form class="user" method="POST" action="{{ route('login') }}">
+                @csrf
+                <div class="form-group">
+                    <input id="email" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" aria-describedby="emailHelp" autocomplete="off" placeholder="Masukan email..">
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror" name="password" autocomplete="current-password" placeholder="Masukan password..">
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox small">
+                        <input class="custom-control-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                        <label class="custom-control-label" for="remember">Ingatkan saya</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+			<div class="mx-auto">
+				<a class="small" href="{{ route('register') }}">Buat Akun</a>
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+

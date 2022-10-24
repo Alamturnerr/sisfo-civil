@@ -58,7 +58,7 @@
                     <hr>
                 </div>
                 <div class="col-md-12">
-                    <div class="row gallery-home">
+                    <div id="imgGallery" class="row gallery-home">
                         <section class="col-md-9 main-img-home">
                             <img class="img-fluid main-img-home rounded shadow" id="mainImg-home" src="{{asset('img/user/gallery1-home.png')}}" alt="gallery-home">
                         </section>
@@ -74,6 +74,36 @@
             </section>
         </div>
     </div>
+    <script>
+        (function(){
+            var imgLen = document.getElementById('imgGallery');
+            var images = imgLen.getElementsByTagName('img');
+            var counter = 1;
+
+            if(counter <= images.length){
+                setInterval(function(){
+                    images[0].src = images[counter].src;
+                    console.log(images[counter].src);
+                    counter++;
+
+                    if(counter === images.length){
+                        counter = 1;
+                    
+                    }
+                },5000);
+            }
+            for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active ", "");
+    
+            }
+    slides[slidesIndex-1].style.display -= "block";
+    dots[slideIndex-1].className += " active ";
+    captionText,innerHTML = dots[slideIndex-1].alt;
+
+        })();
+    
+    </script>
+
     {{-- End Galeri --}}
 
     {{-- Berita Terbaru --}}

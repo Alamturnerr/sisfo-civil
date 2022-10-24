@@ -99,7 +99,6 @@
                             <select class="form-control @error('status') is-invalid @enderror" id="status" name="status">
                                 <option disabled {{ (old('status') ? '':'selected') }}>-- Pilih Status --</option>
                                 <option value="Daerah Rawan">Daerah Rawan</option>
-                                <option value="Dalam Pembangunan">Dalam Pembangunan</option>
                                 <option value="Daerah Strategis">Daerah Strategis</option>
                             </select>
                             @error('status')
