@@ -22,7 +22,7 @@
 					@if($profile == NULL)
 						<p class="text-center">-- Deskripsi belum tersedia --</p>
 					@else
-						<p>{!! $profile->description !!}</p>
+						<span class="d-flex justify-content-sm-center">{!! $profile->description !!}</span>
 					@endif
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 		{{-- End Visi Misi --}}
 
 		{{-- Struktur Organisasi --}}
-		{{-- <section class="my-4 pb-3">
+		<section class="my-4 pb-3">
 			<h3 class="my-4">Struktur Organisasi</h3>
 			<div class="row">
 				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
@@ -135,7 +135,7 @@
 					<br>
 				</div>
 			</div>
-		</section> --}}
+		</section>
 		{{-- End Struktur Organisasi --}}
 	</div>
 </main>
