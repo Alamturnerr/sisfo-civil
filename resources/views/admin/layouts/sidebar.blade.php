@@ -86,6 +86,11 @@
             <i class="fas fa-fw fa-calendar"></i>
             <span>Event</span></a>
     </li>
+    <li class="nav-item {{ request()->is('admin/events', 'admin/events/*') ? ' active' : '' }}">
+        <a class="nav-link" href="/admin/events">
+            <i class="fas fa-fw fa-calendar"></i>
+            <span>Event</span></a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

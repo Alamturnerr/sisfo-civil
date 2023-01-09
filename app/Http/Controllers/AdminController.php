@@ -28,6 +28,8 @@ class AdminController extends Controller
         $applicants = Applicant::get();
         $information_systems = InformationSystem::get();
         $events = Event::get();
+        $gallery = Gallery::get();
+
 
         $postPerCategoriesName = [];
         $postPerCategoriesTotal = [];

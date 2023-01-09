@@ -30,7 +30,7 @@
                         <i class="fas fa-map mr-2"></i>Gedung F - Universitas Widyatama<br>Jl. Cikutra no 204 A Bandung<br>Jawa Barat, Indonesia 40125
                     </p>
                     <p>
-                        <i class="fas fa-envelope mr-2"></i>sipil.utama2019@gmail.com
+                       <a href="mailto:sipil.utama2019@gmail.com"> <i class="fas fa-envelope mr-2"></i>sipil.utama2019@gmail.com</a>
                     </p>
                     {{-- <p>
                         <i class="fas fa-phone mr-2"></i>+62-22-7275855 ext 228

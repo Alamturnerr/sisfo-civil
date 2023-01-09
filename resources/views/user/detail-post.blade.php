@@ -15,7 +15,7 @@
             <div class="col-md-12">
                 <h3>{{ $post->title }}</h3>
                 <p class="px-1">
-                    <i class="fas fa-calendar"></i> {{ $post->created_at }} - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
+                    <i class="fas fa-calendar"></i> {{ $post->created_at }} <i class="fas fa-eye"></i> {{$post->total_visited}} - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
                 </p>
             </div>
         </section>

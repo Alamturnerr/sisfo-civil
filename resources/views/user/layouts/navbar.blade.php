@@ -33,9 +33,32 @@
 			<li class="nav-item px-1 py-2">
 				<a class="nav-link {{ request()->is('event', 'event/*') ? ' active' : '' }}" href="/event">Event</a>
 			</li>
+			<li class="nav-item px-1 py-2">
+				<a class="nav-link {{ request()->is('faq', 'faq/*') ? ' active' : '' }}" href="/faq">FAQ</a>
+			</li>
 			<li class="px-2 py-2">
 				<a target="_blank" class="nav-link btn btn-danger btn-sm px-4 contact-us" href="mailto:sipil.utama2019@gmail.com">Kontak Kami</a>
 			</li>
 		</ul>
 	</div>
 </nav>
+<!-- Modal Login -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
