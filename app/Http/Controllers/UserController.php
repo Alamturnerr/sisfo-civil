@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 use App\Models\RepositoryCategory;
 use App\Models\PostCategory;
 use App\Models\Repository;
@@ -9,14 +12,19 @@ use App\Models\Post;
 use App\Models\Profile;
 use App\Models\Job;
 use App\Models\Event;
+use App\Models\Gallery;
 use App\Models\InformationSystem;
+use App\Models\Member;
 
 class UserController extends Controller
 {
+    
     public function index()
     {
+         $galeris = Gallery::orderByDesc('created_at')->limit(1)->get();
+        $galeri = Gallery::orderByDesc('created_at')->limit(4)->get();
         $posts = Post::latest()->get();
-        return view('user/home', compact('posts'));
+        return view('user/home', compact('posts', 'galeri', 'galeris'));
     }
 
     public function profile()
@@ -130,5 +138,9 @@ class UserController extends Controller
         $repositories = $repositoryCategory->repositories()->latest()->get();
         $repositories_categories = RepositoryCategory::latest()->get();
         return view('user.repositories', compact('repositories', 'repositories_categories', 'repositoryCategory'));
+    }
+    public function faq()
+    {
+        return view('user/faq');
     }
 }

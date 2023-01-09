@@ -46,6 +46,14 @@
     filter: brightness(85%) !important;
     cursor: context-menu !important;
 }
+/*.dot {
+  margin: 0 2px;
+  background-color: #bbb;
+  }
+  
+.active, .dot:hover {
+    background-color: #17376e;
+  } --> */
 
 /* Responsive CSS Mobile*/
 @media only screen and (max-width: 767px) {

@@ -86,10 +86,10 @@
             <i class="fas fa-fw fa-calendar"></i>
             <span>Event</span></a>
     </li>
-    <li class="nav-item {{ request()->is('admin/events', 'admin/events/*') ? ' active' : '' }}">
-        <a class="nav-link" href="/admin/events">
-            <i class="fas fa-fw fa-calendar"></i>
-            <span>Event</span></a>
+    <li class="nav-item {{ request()->is('admin/gallery', 'admin/gallery/*') ? ' active' : '' }}">
+        <a class="nav-link" href="/admin/gallery">
+            <i class="fas fa-fw fa-images"></i>
+            <span>Gallery</span></a>
     </li>
 
     <!-- Divider -->

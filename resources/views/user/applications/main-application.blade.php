@@ -19,7 +19,11 @@
 		<div class="col-lg-4 mb-4">
 			<div id="list-example" class="list-group">
 				<a href="/aplikasi/stabilitas" class="list-group-item list-group-item-action link-app {{ request()->is('aplikasi/stabilitas') ? ' active-app' : '' }} li-border bg-primary text-white">Stabilitas Dinding Penahan Tanah</a>
+				@if(Auth::guard('member')->check()) 
 				<a href="/aplikasi/jembatan-balok" class="list-group-item list-group-item-action link-app {{ request()->is('aplikasi/jembatan-balok') ? ' active-app' : '' }} li-border bg-primary text-white">Jembatan Balok-T</a>
+				@else
+				<a class="list-group-item list-group-item-action text-muted link-app li-border bg-primary text-white">Jembatan Balok-T(Member)</a>
+				@endif
 				<a class="list-group-item list-group-item-action text-muted link-app li-border bg-primary text-white">Analisis Frekuensi (Segera)</a>
 				<a class="list-group-item list-group-item-action text-muted link-app li-border bg-primary text-white">Dinding Gravity (Segera)</a>
 				<a class="list-group-item list-group-item-action text-muted link-app li-border bg-primary text-white">EXCretwall (Segera)</a>

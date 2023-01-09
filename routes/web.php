@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostCategoryController;
@@ -11,6 +12,7 @@ use App\Http\Controllers\ApplicantController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\InformationSystemController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -42,7 +44,16 @@ Route::get('/aplikasi/jembatan-balok', [UserController::class, 'application2']);
 Route::get('/event', [UserController::class, 'events']);
 Route::get('/event/{event:slug}', [UserController::class, 'detail_event']);
 Route::get('/sistem-informasi/data', [UserController::class, 'information_system_data']);
+Route::get('/faq', [UserController::class, 'faq']);
 Route::get('/loker/data', [UserController::class, 'jobs_data']);
+
+// Member
+Route::get('/member/registrasi', [MemberController::class, 'registrasi_member']);
+Route::post('/member/registrasi', [MemberController::class, 'process_register'])->name('process.register');
+Route::post('/', [MemberController::class, 'login_member'])->name('login.member');
+Route::get('user/member/notActive', [MemberController::class, 'not_active'])->name('not.active');
+Route::get('logout_member', [MemberController::class, 'logout_member'])->name('logout_member');
+Route::get('payment{id}', [MemberController::class, 'payment'])->name('payment');
 
 // Admin
 Route::get('/admin', [AdminController::class, 'index']);
@@ -58,6 +69,7 @@ Route::resource('admin/jobs', JobController::class);
 Route::resource('admin/applicants', ApplicantController::class);
 Route::get('admin/applicants/jobs/{job:id}', [JobController::class, 'show']);
 Route::resource('admin/events', EventController::class);
+Route::resource('admin/gallery', GalleryController::class);
 
 // Auth
 Auth::routes();

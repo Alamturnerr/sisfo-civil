@@ -46,6 +46,7 @@
                     <!-- <a target="_blank" href="https://id.linkedin.com/company/widyatama-university" class="footer-icon text-white mr-3"><i class="fab mb-3 fa-lg fa-linkedin"></i></a> -->
                     <a target="_blank" href="https://instagram.com/dunia_sipil_utama?igshid=YmMyMTA2M2Y=" class="footer-icon text-white mr-3"><i class="fab mb-3 fa-lg fa-instagram"></i></a>
                     <a target="_blank" href="https://youtube.com/channel/UCGSzZiM-0VRStcf2gzGhdTg" class="footer-icon text-white mr-3"><i class="fab mb-3 fa-lg fa-youtube"></i></a>
+                    <a href="http://s11.flagcounter.com/more/v04"><img src="https://s11.flagcounter.com/count2/v04/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_6/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
                 </div>
 
                 <hr class="w-100 clearfix" />

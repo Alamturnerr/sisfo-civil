@@ -10,6 +10,7 @@ use App\Models\Job;
 use App\Models\Applicant;
 use App\Models\Event;
 use App\Models\InformationSystem;
+use App\Models\Gallery;
 
 class AdminController extends Controller
 {
@@ -95,6 +96,7 @@ class AdminController extends Controller
             'informationSystemPerStatusTotal' => $informationSystemPerStatusTotal,
             'informationSystemPerStatusColor' => $informationSystemPerStatusColor,
             'events' => $events,
+            'gallery' => $gallery,
         ]);
     }
 }

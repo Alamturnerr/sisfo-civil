@@ -60,13 +60,14 @@
                 <div class="col-md-12">
                     <div id="imgGallery" class="row gallery-home">
                         <section class="col-md-9 main-img-home">
-                            <img class="img-fluid main-img-home rounded shadow" id="mainImg-home" src="{{asset('img/user/gallery1-home.png')}}" alt="gallery-home">
+                        @foreach($galeris as $galeris)
+                            <img class="img-fluid main-img-home rounded shadow" id="mainImg-home" src="{{ asset($galeris->takeImage()) }}" style="height: 1280px; width: 800px;" alt="gallery-home">
+                        @endforeach
                         </section>
                         <section class="col-md-2 mx-auto my-auto">
-                            <img class="img-fluid my-2 thumb-home gallery-active" src="{{asset('img/user/gallery1-home.png')}}" alt="gallery1-home">
-                            <img class="img-fluid my-2 thumb-home" src="{{asset('img/user/gallery2-home.png')}}" alt="gallery2-home">
-                            <img class="img-fluid my-2 thumb-home" src="{{asset('img/user/gallery3-home.png')}}" alt="gallery3-home">
-                            <img class="img-fluid my-2 thumb-home" src="{{asset('img/user/gallery4-home.png')}}" alt="gallery4-home">
+                        @foreach($galeri as $gallery)
+                            <img class="img-fluid my-2 thumb-home" src="{{ asset($gallery->takeImage()) }}" style="height: 1280px; width: 800px;" alt="gallery1-home">
+                         @endforeach
                         </section>
                     </div>
                 </div>
@@ -74,24 +75,31 @@
         </div>
     </div>
     <script>
-(function(){
-        var imgLen = document.getElementById('imgGallery');
-        var images = imgLen.getElementsByTagName('img');
-        var counter = 1;
+        (function(){
+                var imgLen = document.getElementById('imgGallery');
+                var images = imgLen.getElementsByTagName('img');
+                var dots = document.getElementsByClassName('dot');
+                var i;
+                var counter = 1;
 
-        if(counter <= images.length){
-            setInterval(function(){
-                images[0].src = images[counter].src;
-                console.log(images[counter].src);
-                counter++;
+                if(counter <= images.length){
+                    setInterval(function(){
+                        images[0].src = images[counter].src;
+                        console.log(images[counter].src);
+                        counter++;
 
-                if(counter === images.length){
-                    counter = 1;
+                        if(counter === images.length){
+                            counter = 1;
+                        }
+                    },5000);
                 }
-            },5000);
-        }
-})();
-</script>
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            })();
+    </script>
     {{-- End Galeri --}}
 
     {{-- Berita Terbaru --}}
@@ -134,5 +142,34 @@
         </section>
     </div>
     {{-- End Berita Terbaru --}}
+    {{-- @if(Auth::guard('member')->check()) 
+    <script>
+        $(document).ready(function(){
+            $("#myModal").modal("show");
+        });
+    </script>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Account Information</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Hallo! nama .</br>
+                    Akun anda belum aktif, silahkan aktifkan terlebih dahulu dengan melakukan pembayaran.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Pembayaran</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+@endif --}}
+
 </main>
 @endsection

@@ -146,4 +146,17 @@ main img {
 footer hr {
     border: 1px solid white;
 }
+
+.login-header {
+    background-color:#17376E;
+    color: #fff;
+}
+
+.close-color {
+    color: #fff;
+}
+
+.close-color:hover {
+    color: #fff;
+}
 /* End Footer */

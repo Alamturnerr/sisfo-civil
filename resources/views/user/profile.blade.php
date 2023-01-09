@@ -51,91 +51,74 @@
 		{{-- End Visi Misi --}}
 
 		{{-- Struktur Organisasi --}}
-		{{-- <section class="my-4 pb-3">
+		 <section class="my-4 pb-3">
 			<h3 class="my-4">Struktur Organisasi</h3>
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
 					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo1-home.png")}}" class="d-block w-100" alt="photo1-home"> 
+						<img src="https://ts.widyatama.ac.id/wp-content/uploads/2020/02/Yanyan-Agustian-e1580714999113-150x150.jpg" class="d-block w-100" alt="photo1-home"> 
 						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">Leonardo DiCaprio</h8>
-							<p class="card-text">Ketua</p>
-						</div>
-					</div>
-					<br>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
-					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo2-home.png")}}" class="d-block w-100" alt="photo2-home"> 
-						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">Philip Seymour Hoffman</h8>
-							<p class="card-text">Wakil Ketua</p>
-						</div>
-					</div> 
-					<br>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
-					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo3-home.png")}}" class="d-block w-100" alt="photo3-home"> 
-						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">Caprion</h8>
-							<p class="card-text">Sekretaris</p>
-						</div>
-					</div>
-					<br>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
-					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo4-home.png")}}" class="d-block w-100" alt="photo4-home"> 
-						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">James Bond</h8>
-							<p class="card-text">Bendahara</p>
-						</div>
-					</div>
-					<br>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
-					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo5-home.png")}}" class="d-block w-100" alt="photo5-home"> 
-						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">Alexa Sandra</h8>
-							<p class="card-text">Sekretaris II</p>
-						</div>
-					</div>
-					<br>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
-					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo6-home.png")}}" class="d-block w-100" alt="photo6-home"> 
-						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">Johaness Malika</h8>
-							<p class="card-text">Bendahara II</p>
-						</div>
-					</div>
-					<br>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
-					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo7-home.png")}}" class="d-block w-100" alt="photo7-home"> 
-						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">Andreas Alexander</h8>
-							<p class="card-text">Dokumentasi</p>
-						</div>
-					</div>
-					<br>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
-					<div class="card shadow my-3">
-						<img src="{{asset("img/user/photo8-home.png")}}" class="d-block w-100" alt="photo8-home"> 
-						<div class="card-body text-center">
-							<h8 class="card-title font-weight-bold">Leona Capricon</h8>
-							<p class="card-text">Humas</p>
+							<h8 class="card-title font-weight-bold">Yanyan Agustian, S.T.,M.Eng.,PhD</h8>
+							<p class="card-text">Ketua Program Studi</p>
+							<p class="card-text">Kelompok Keahlian Geoteknik/Mekanika Tanah</p>
 						</div>
 					</div>
 					<br>
 				</div>
 			</div>
-		</section> --}}
+			<div class="row justify-content-between">
+				<div class="col d-flex align-items-stretch justify-content-center">
+					<div class="card shadow my-5" style="width: 185px;">
+						<img src="https://ts.widyatama.ac.id/wp-content/uploads/2020/02/Bambang-Eko-Widyanto-e1580720494163-150x150.jpg" class="d-block w-100" alt="photo5-home"> 
+						<div class="card-body text-center">
+							<h8 class="card-title font-weight-bold">Bambang Eko Widyanto,MT</h8>
+							<p class="card-text">Kelompok Keahlian Struktur</p>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col d-flex align-items-stretch justify-content-center">
+					<div class="card shadow my-5" style="width: 185px;">
+						<img src="https://ts.widyatama.ac.id/wp-content/uploads/2020/02/Fuad-Hasan-1-150x150.jpg" class="d-block w-100" alt="photo6-home"> 
+						<div class="card-body text-center">
+							<h8 class="card-title font-weight-bold">Fuad Hasan, A.Md,S.T,M.T.</h8>
+							<p class="card-text">Kelompok Keahlian Sumber Daya Air</p>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col d-flex align-items-stretch justify-content-center">
+					<div class="card shadow my-5" style="width: 185px;">
+						<img src="https://ts.widyatama.ac.id/wp-content/uploads/2020/02/Asep-Setiawan-150x150.png" class="d-block w-100" alt="photo7-home"> 
+						<div class="card-body text-center">
+							<h8 class="card-title font-weight-bold">Asep Setiawan, S.T.,M.T.</h8>
+							<p class="card-text">Kelompok Keahlian Transportasi</p>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col d-flex align-items-stretch justify-content-center">
+					<div class="card shadow my-5" style="width: 185px;">
+						<img src="https://ts.widyatama.ac.id/wp-content/uploads/2020/02/Sandy-Radhitya-Akbar-150x150.jpg" class="d-block w-100" alt="photo8-home"> 
+						<div class="card-body text-center">
+							<h8 class="card-title font-weight-bold">Sandy Radhitya Akbar</h8>
+							<p class="card-text">Kelompok Keahlian Manajemen Konstruksi</p>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col d-flex align-items-stretch justify-content-center">
+					<div class="card shadow my-5" style="width: 185px;">
+						<img src="https://ts.widyatama.ac.id/wp-content/uploads/2020/02/Raden-Herdian-150x150.jpg" class="d-block w-100" alt="photo9-home"> 
+						<div class="card-body text-center">
+							<h8 class="card-title font-weight-bold">Raden Herdian Bayu Ash Siddiq, S.T.,M.T</h8>
+							<p class="card-text">Kelompok Keahlian Sumber Daya Air</p>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</section> 
 		{{-- End Struktur Organisasi --}}
 	</div>
 </main>
