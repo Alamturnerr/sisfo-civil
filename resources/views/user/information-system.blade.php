@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="alert alert-light shadow d-inline-block mr-3 my-2">
-                        <span><div class="bg-success box-color"></div> Daerah Strategis : {{ $informationSystem->where('status', 'Daerah Strategis')->count() }}</span><br
+                        <span><div class="bg-success box-color"></div> Daerah Strategis : {{ $informationSystem->where('status', 'Daerah Strategis')->count() }}</span><br>
                         <span><div class="bg-danger box-color"></div> Daerah Rawan : {{ $informationSystem->where('status', 'Daerah Rawan')->count() }}</span>
                     </div>
                 </div>

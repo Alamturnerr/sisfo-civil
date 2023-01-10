@@ -6,17 +6,12 @@
 <link rel="stylesheet" href="{{ asset('css/user/detail-posts.css') }}">
 <link rel="stylesheet" href="{{ asset('css/user/side-posts.css') }}">
 @endsection
-<<<<<<< HEAD
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script>
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover();   
 });
 </script>
-=======
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
->>>>>>> c97a5c32df2593b317b3ef7facfc241743c37b58
 @section('content')
 <main>
     <div class="container">
@@ -25,12 +20,7 @@ $(document).ready(function(){
             <div class="col-md-12">
                 <h3>{{ $post->title }}</h3>
                 <p class="px-1">
-<<<<<<< HEAD
                     <i class="fas fa-calendar"></i> {{ $post->created_at }} <span class="text-dark" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Total Kunjungan"><i class="fas fa-eye"></i> {{$post->total_visited}}</span> - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
-=======
-                    <i class="fas fa-calendar"></i> {{ $post->created_at }} <span data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Total Pengunjung">
-                <i class="fas fa-eye"></i> {{ $post->total_visited }} </span> - <a href="/berita/kategori/{{ $post->post_category->slug }}" class="badge badge-primary"><i class="fas fa-tag  "></i> {{ $post->post_category->name }}</a>
->>>>>>> c97a5c32df2593b317b3ef7facfc241743c37b58
                 </p>
             </div>
         </section>

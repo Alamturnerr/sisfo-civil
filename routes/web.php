@@ -70,11 +70,6 @@ Route::resource('admin/jobs', JobController::class);
 Route::resource('admin/applicants', ApplicantController::class);
 Route::get('admin/applicants/jobs/{job:id}', [JobController::class, 'show']);
 Route::resource('admin/events', EventController::class);
-<<<<<<< HEAD
 Route::resource('admin/gallery', GalleryController::class);
-=======
-Route::resource('admin/galery', GaleryController::class);
->>>>>>> c97a5c32df2593b317b3ef7facfc241743c37b58
-
 // Auth
 Auth::routes();
