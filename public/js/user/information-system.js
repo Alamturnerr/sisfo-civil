@@ -36,19 +36,19 @@ $(document).ready(function(){
     $.getJSON('/sistem-informasi/data',function(data){
         $.each(data,function(index){
             let desc;
-            if(data[index].status.toLowerCase()== 'dalam pembangunan'){
-                desc=`
-                    <div class=container-fluid information-system-popup p-0 m-0'>
-                        <h5>${data[index].title}</h5> <hr>
-                        <div class='custom-information-system-${data[index].id} p-0 m-0'></div>
-                        <h6 class='status-system-information badge badge-warning p-1 my-2'>${data[index].status}</h6>
-                        <p class='py-0 my-0'><strong>Provinsi</strong> : ${data[index].province} <br>
-                        <strong>Kota</strong> : ${data[index].city}<br>
-                        <strong>Alamat</strong> : ${data[index].address}</p>
-                        <p class='description-is pt-1 mt-1'>${data[index].description}<p>
-                    </div>`;
-            }
-            else if(data[index].status.toLowerCase()== 'daerah rawan'){ 
+            // if(data[index].status.toLowerCase()== 'dalam pembangunan'){
+            //     desc=`
+            //         <div class=container-fluid information-system-popup p-0 m-0'>
+            //             <h5>${data[index].title}</h5> <hr>
+            //             <div class='custom-information-system-${data[index].id} p-0 m-0'></div>
+            //             <h6 class='status-system-information badge badge-warning p-1 my-2'>${data[index].status}</h6>
+            //             <p class='py-0 my-0'><strong>Provinsi</strong> : ${data[index].province} <br>
+            //             <strong>Kota</strong> : ${data[index].city}<br>
+            //             <strong>Alamat</strong> : ${data[index].address}</p>
+            //             <p class='description-is pt-1 mt-1'>${data[index].description}<p>
+            //         </div>`;
+            // }
+            if(data[index].status.toLowerCase()== 'daerah rawan'){ 
                 desc=`
                     <div class=container-fluid information-system-popup p-0 m-0'>
                         <h5>${data[index].title}</h5> <hr>
@@ -72,13 +72,13 @@ $(document).ready(function(){
                         <p class='description-is pt-1 mt-1'>${data[index].description}<p>
                     </div>`;
             }
-            if(data[index].status.toLowerCase()== 'dalam pembangunan'){
-                let marker=L.marker([data[index].x, data[index].y], {icon: yellowIcon}).addTo(map).bindPopup(desc,{
-                    minWidth:300
-                });
-                dalam_pembangunan.addLayer(marker);
-            }
-            else if(data[index].status.toLowerCase()== 'daerah rawan'){ 
+            // if(data[index].status.toLowerCase()== 'dalam pembangunan'){
+            //     let marker=L.marker([data[index].x, data[index].y], {icon: yellowIcon}).addTo(map).bindPopup(desc,{
+            //         minWidth:300
+            //     });
+            //     dalam_pembangunan.addLayer(marker);
+            // }
+            if(data[index].status.toLowerCase()== 'daerah rawan'){ 
                 let marker=L.marker([data[index].x, data[index].y], {icon: redIcon}).addTo(map).bindPopup(desc,{
                     minWidth:300
                 });
@@ -96,7 +96,7 @@ $(document).ready(function(){
 
 // Filter layer
     var overlayMaps = {
-        "Dalam Pembangunan": dalam_pembangunan,
+        // "Dalam Pembangunan": dalam_pembangunan,
         "Daerah Rawan":daerah_rawan,
         "Daerah Strategis":daerah_strategis
     };

@@ -22,7 +22,7 @@
 					@if($profile == NULL)
 						<p class="text-center">-- Deskripsi belum tersedia --</p>
 					@else
-						<p>{!! $profile->description !!}</p>
+						<span class="d-flex justify-content-sm-center">{!! $profile->description !!}</span>
 					@endif
 				</div>
 			</div>
@@ -51,7 +51,11 @@
 		{{-- End Visi Misi --}}
 
 		{{-- Struktur Organisasi --}}
+<<<<<<< HEAD
 		 <section class="my-4 pb-3">
+=======
+		<section class="my-4 pb-3">
+>>>>>>> c97a5c32df2593b317b3ef7facfc241743c37b58
 			<h3 class="my-4">Struktur Organisasi</h3>
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
@@ -66,6 +70,7 @@
 					<br>
 				</div>
 			</div>
+<<<<<<< HEAD
 			<div class="row justify-content-between">
 				<div class="col d-flex align-items-stretch justify-content-center">
 					<div class="card shadow my-5" style="width: 185px;">
@@ -119,6 +124,9 @@
 				</div>
 			</div>
 		</section> 
+=======
+		</section>
+>>>>>>> c97a5c32df2593b317b3ef7facfc241743c37b58
 		{{-- End Struktur Organisasi --}}
 	</div>
 </main>

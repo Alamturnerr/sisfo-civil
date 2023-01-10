@@ -101,7 +101,6 @@
                             <select class="form-control @error('status') is-invalid @enderror" id="status" name="status">
                                 <option disabled>-- Pilih Status --</option>
                                 <option value="Daerah Rawan" {{ $informationSystem->status == 'Daerah Rawan' ? 'selected' : '' }}>Daerah Rawan</option>
-                                <option value="Dalam Pembangunan" {{ $informationSystem->status == 'Dalam Pembangunan' ? 'selected' : '' }}>Dalam Pembangunan</option>
                                 <option value="Daerah Strategis" {{ $informationSystem->status == 'Daerah Strategis' ? 'selected' : '' }}>Daerah Strategis</option>
                             </select>
                             @error('status')

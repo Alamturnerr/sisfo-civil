@@ -76,6 +76,7 @@
     </div>
     <script>
         (function(){
+<<<<<<< HEAD
                 var imgLen = document.getElementById('imgGallery');
                 var images = imgLen.getElementsByTagName('img');
                 var dots = document.getElementsByClassName('dot');
@@ -100,6 +101,36 @@
                 dots[slideIndex-1].className += " active";
             })();
     </script>
+=======
+            var imgLen = document.getElementById('imgGallery');
+            var images = imgLen.getElementsByTagName('img');
+            var counter = 1;
+
+            if(counter <= images.length){
+                setInterval(function(){
+                    images[0].src = images[counter].src;
+                    console.log(images[counter].src);
+                    counter++;
+
+                    if(counter === images.length){
+                        counter = 1;
+                    
+                    }
+                },5000);
+            }
+            for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active ", "");
+    
+            }
+    slides[slidesIndex-1].style.display -= "block";
+    dots[slideIndex-1].className += " active ";
+    captionText,innerHTML = dots[slideIndex-1].alt;
+
+        })();
+    
+    </script>
+
+>>>>>>> c97a5c32df2593b317b3ef7facfc241743c37b58
     {{-- End Galeri --}}
 
     {{-- Berita Terbaru --}}

@@ -92,6 +92,12 @@
             <span>Gallery</span></a>
     </li>
 
+    <li class="nav-item {{ request()->is('admin/galery', 'admin/galery/*') ? ' active' : '' }}">
+        <a class="nav-link" href="/admin/galery">
+            <i class="fas fa-fw fa-images"></i>
+            <span>Galery</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
