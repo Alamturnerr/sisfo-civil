@@ -42,6 +42,7 @@ Route::post('applicants', [ApplicantController::class, 'store']);
 Route::get('/aplikasi', [UserController::class, 'application']);
 Route::get('/aplikasi/stabilitas', [UserController::class, 'application1']);
 Route::get('/aplikasi/jembatan-balok', [UserController::class, 'application2']);
+Route::get('/aplikasi/EXCretwall', [UserController::class, 'application5']);
 Route::get('/event', [UserController::class, 'events']);
 Route::get('/event/{event:slug}', [UserController::class, 'detail_event']);
 Route::get('/sistem-informasi/data', [UserController::class, 'information_system_data']);

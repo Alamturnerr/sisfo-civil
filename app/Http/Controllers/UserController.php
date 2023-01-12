@@ -120,6 +120,11 @@ class UserController extends Controller
         return view('user.applications.application2');
     }
 
+    public function application5()
+    {
+        return view('user.applications.application5');
+    }
+
     public function post_categories(PostCategory $post_category)
     {
         $posts = $post_category->posts()->latest()->get();

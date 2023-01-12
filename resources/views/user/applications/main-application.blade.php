@@ -13,6 +13,7 @@
 	@else
 	@yield('header-aplikasi-1')
 	@yield('header-aplikasi-2')
+	@yield('header-aplikasi-5')
 	@endif
 	<div class="row">
 		{{-- Sidebar --}}
@@ -26,7 +27,7 @@
 				@endif
 				<a class="list-group-item list-group-item-action text-muted link-app li-border bg-primary text-white">Analisis Frekuensi (Segera)</a>
 				<a class="list-group-item list-group-item-action text-muted link-app li-border bg-primary text-white">Dinding Gravity (Segera)</a>
-				<a class="list-group-item list-group-item-action text-muted link-app li-border bg-primary text-white">EXCretwall (Segera)</a>
+				<a href="/aplikasi/EXCretwall" class="list-group-item list-group-item-action link-app {{ request()->is('aplikasi/EXCretwall') ? ' active-app' : '' }} li-border bg-primary text-white">EXCretwall (Segera)</a>
 			</div>	
 		</div>
 		{{-- End Sidebar --}}
